@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Persona
+
+</div>
+
+        <form action="/procesa/login" method="POST" class="formul">
+            <div class="form-group">
+                <label asp-for="Nombre">Your Name:</label>
+                <input id="Nombre" class="form-control" type="text" asp-for="Nombre" />
+                <span asp-validation-for="Nombre"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Direccion">Dojo Location:</label>
+                <select name="Direccion" id="Direccion" class="form-control" asp-for="Direccion">
+                    <span asp-validation-for="Direccion"></span>
+                    <option value="San Jose">San Jose</option>
+                    <option value="Los Ángeles">Los Ángeles</option>
+                </select>
+            </div>
+            <div>
+                <label asp-for="Lenguaje">Favorite Language</label>
+                <select name="Lenguaje" id="Lenguaje" class="form-control" asp-for="Lenguaje">
+                    <span asp-validation-for="Lenguaje"></span>
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <div class="comment">
+                <label asp-for="Comentario">Comment (optional):</label>
+                <input id="Comentario" type="text" asp-for="Comentario">
+                <span asp-validation-for="Comentario"></span>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>

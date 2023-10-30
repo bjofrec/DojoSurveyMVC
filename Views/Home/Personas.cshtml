@@ -1,0 +1,25 @@
+    @model List<Persona>
+    <div class="cuadro1">
+        <h1>Respuestas del formulario:</h1>
+        @foreach(Persona persona in Model){
+        <div class="form-group">
+            <label for="Nombre">Your Name: </label>
+            <span id="Nombre">@persona.Nombre</span>
+        </div>
+        <div class="form-group">
+            <label for="Direccion">Dojo Location: </label>
+            <span id="Direccion">@persona.Direccion</span>
+        </div>
+        <div class="form-group">
+            <label for="Lenguaje">Favorite Language: </label>
+            <span id="Lenguaje">@persona.Lenguaje</span>
+        </div>
+        <div class="form-group">
+            <label for="Comentario">Comment (optional): </label>
+            <span id="Comentario">@persona.Comentario</span>
+        </div>
+        }
+        <form action="/regresar/login" class="button">
+            <button class="btn1">Go back</button>
+        </form>
+    </div>

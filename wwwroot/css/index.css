@@ -1,0 +1,41 @@
+.formul{
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 350px;
+    height: 280px;
+    border: 3px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 3px;
+    
+}
+label{
+    text-align: left;
+}
+
+.form-control{
+    width: 120px;
+    padding: 3px;
+    float: right;
+}
+
+.btn{
+    width: 70px;
+    border-radius: 0%;
+    position: relative;
+    left: 230px;
+    background-color: blue;
+    color: white;
+ 
+
+}
+
+#Comentario{
+    width: 290px;
+    height: 30px;
+}
+
+
